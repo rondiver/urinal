@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Urinal Game</title>
+  <meta name="description" content="Test your knowledge of men's restroom etiquette in this classic game!">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="game-container" id="game">
+    <!-- Decorative elements -->
+    <div class="decorations" aria-hidden="true">
+      <span class="deco deco-star deco-1">⭐</span>
+      <span class="deco deco-sparkle deco-2">✦</span>
+      <span class="deco deco-diamond deco-3">◇</span>
+      <span class="deco deco-star deco-4">★</span>
+      <span class="deco deco-sparkle deco-5">✧</span>
+      <span class="deco deco-circle deco-6">○</span>
+      <span class="deco deco-star deco-7">⭐</span>
+      <span class="deco deco-sparkle deco-8">✦</span>
+    </div>
+
+    <!-- Title Screen -->
+    <div class="screen screen-title" id="screen-title">
+      <div class="title-content">
+        <div class="badge">🚽 A CLASSIC SINCE 1997 🚽</div>
+        <h1 class="game-title">
+          <span class="title-the">THE</span>
+          <span class="title-urinal gradient-text">URINAL</span>
+          <span class="title-game">GAME</span>
+        </h1>
+        <p class="subtitle">Test your knowledge of men's restroom etiquette</p>
+        <p class="description">You will be presented with several scenarios.<br>In each one, select the proper urinal to use.</p>
+        <button class="btn btn-primary" id="btn-start">
+          <span>ENTER RESTROOM</span>
+          <span class="btn-icon">🚪</span>
+        </button>
+      </div>
+      <p class="credit">Original game by CleverMedia (1997) • Maximalism Remake</p>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="screen screen-game hidden" id="screen-game">
+      <div class="game-header">
+        <div class="problem-badge" id="problem-number">PROBLEM 1</div>
+        <div class="score-display">SCORE: <span id="current-score">0</span></div>
+      </div>
+      <p class="problem-text" id="problem-text">Loading...</p>
+      <p class="instruction">Click on your choice</p>
+      
+      <div class="restroom" id="restroom">
+        <!-- Urinals rendered by JS -->
+      </div>
+    </div>
+
+    <!-- Feedback Screen -->
+    <div class="screen screen-feedback hidden" id="screen-feedback">
+      <div class="feedback-content">
+        <div class="feedback-icon" id="feedback-icon">✓</div>
+        <h2 class="feedback-title" id="feedback-title">Correct!</h2>
+        <p class="feedback-message" id="feedback-message">Perfect choice!</p>
+        <button class="btn btn-secondary" id="btn-continue">
+          <span>CONTINUE</span>
+          <span class="btn-icon">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="screen screen-results hidden" id="screen-results">
+      <div class="results-content">
+        <h2 class="results-title gradient-text">GAME OVER</h2>
+        <div class="results-score">
+          <span class="score-number" id="final-score">0</span>
+          <span class="score-label">/ 6</span>
+        </div>
+        <div class="results-rating" id="results-rating">
+          <span class="rating-emoji">🏆</span>
+          <span class="rating-text">URINAL MASTER</span>
+        </div>
+        <p class="results-message" id="results-message">You've mastered the art of restroom etiquette!</p>
+        <div class="results-buttons">
+          <button class="btn btn-primary" id="btn-restart">
+            <span>PLAY AGAIN</span>
+            <span class="btn-icon">🔄</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scenarios.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
