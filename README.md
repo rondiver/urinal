@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/urinal-game.png" alt="The Urinal Game" width="600">
+</p>
+
 # The Urinal Game
 
 **Solving humanity's most important optimization problem: which urinal to pick.**
