@@ -21,7 +21,7 @@ Practice makes perfect. This game presents you with increasingly complex restroo
 1. Open `index.html` in a browser
 2. Click "Enter Restroom"
 3. Survey the situation
-4. Choose wisely
+4. Choose wisely 
 5. Learn from your mistakes (or bask in your superiority)
 
 ## Rules You Already Know
